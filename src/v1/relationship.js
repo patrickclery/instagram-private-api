@@ -238,32 +238,4 @@ export class Relationship extends Resource {
                         muted: this.muted
                       }, this._params);
   }
-
-  approvePending () {
-    return Relationship.approvePending(this.session, this.accountId);
-  }
-
-  removeFollower () {
-    return Relationship.removeFollower(this.session, this.accountId);
-  }
-
-  block () {
-    return Relationship.block(this.session, this.accountId);
-  }
-
-  unblock () {
-    return Relationship.unblock(this.session, this.accountId);
-  }
-  muteStory() {
-    return Relationship.muteStory(this.session, this.accountId);
-  }
-  unmuteStory() {
-    return Relationship.unmuteStory(this.session, this.accountId);
-  }
-  mutePosts() {
-    return Relationship.mutePosts(this.session, this.accountId);
-  }
-  unmutePosts() {
-    return Relationship.unmutePosts(this.session, this.accountId);
-  }
 }
